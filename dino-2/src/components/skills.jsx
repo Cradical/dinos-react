@@ -1,9 +1,20 @@
 import React from 'react'
 
 const Skills = (props) => {
-    console.log('props.skills: ', props.skills)
+    let listSkills = props.skills.skills.map((item, i) => {
+        return (
+            <li key={i}>
+                {item}
+            </li>
+        )
+    })
     return(
-        <p>placeholder</p>
+        <div>
+            <h4>Skills</h4>
+            <ul className="skills-list">
+                {listSkills} 
+            </ul>
+        </div>        
     )
     
 }

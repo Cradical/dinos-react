@@ -4,13 +4,9 @@ import './cards'
 import Cards from './cards';
 
 const Profiles = (props) => {
-console.log('props: ', props.data)
-
-let object_item = props.data.map((item, i) => {
-    console.log('item_from_map: ', item)
-    return <Cards cardData={item} />
-})
-console.log('object_item: ', object_item)
+    let object_item = props.data.map((item, i) => {
+        return <Cards key={i} cardData={item} />
+    })
     return(
         <div>
             <h2>Profiles</h2>
