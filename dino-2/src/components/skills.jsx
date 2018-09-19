@@ -2,9 +2,11 @@ import React from 'react'
 
 const Skills = (props) => {
     console.log('props.skills: ', props.skills)
-    // let skillsArr = props.skills.map(element => {
-    //     console.log(element)
-    // })
+    return(
+        <p>placeholder</p>
+    )
+    
 }
+
 
 export default Skills

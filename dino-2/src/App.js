@@ -6,7 +6,7 @@ import Profiles from './components/profiles';
 
 class App extends Component {
   constructor(props){
-    super()
+    super(props)
       this.state = {
         data: []
       }
@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Profiles list={this.state.data}/>
+        <Profiles data={this.state.data}/>
       </div>
     );
   }
